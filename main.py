@@ -137,7 +137,7 @@ def main():
     for event in pygame.event.get():
       if event.type == pygame.QUIT:
         exit()
-      if event.type == pygame.KEYDOWN:
+      if event.type == pygame.KEYDOWN and win:
         if event.key == pygame.K_q:
           exit()
         if event.key == pygame.K_RETURN:
